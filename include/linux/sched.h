@@ -56,7 +56,6 @@ struct robust_list_head;
 struct root_domain;
 struct rq;
 struct sched_attr;
-struct sched_param;
 struct seq_file;
 struct sighand_struct;
 struct signal_struct;
@@ -309,6 +308,10 @@ struct vtime {
 	u64			utime;
 	u64			stime;
 	u64			gtime;
+};
+
+struct sched_param {
+	int sched_priority;
 };
 
 /*
